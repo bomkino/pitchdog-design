@@ -72,7 +72,7 @@ Useful CSS curves:
 :root {
   --pd-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --pd-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
-  --pd-ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --pd-spatial-panel: cubic-bezier(.32, .72, 0, 1);
 }
 ```
 
@@ -139,9 +139,13 @@ Use a lower rate such as `0.99` for a shorter projection. Validate with real dev
 Continue responding past a bound with increasing resistance:
 
 ```js
-function rubberband(overshoot, dimension, constant = 0.55) {
-  return (overshoot * dimension * constant) /
-    (dimension + constant * Math.abs(overshoot));
+function resistBeyondEdge(distance, span, resistance = 0.55) {
+  const safeSpan = Math.max(1, span);
+  const magnitude = Math.abs(distance);
+  const compressed = safeSpan *
+    (1 - 1 / (1 + resistance * magnitude / safeSpan));
+
+  return Math.sign(distance) * compressed;
 }
 ```
 

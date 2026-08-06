@@ -1,7 +1,7 @@
 # Evaluation report
 
 Date: 2026-08-06
-Release: v1.0.1
+Release: v1.0.2
 
 ## Objective verdict
 
@@ -67,6 +67,7 @@ ChatGPT Work received an external identity defined as bright yellow, cobalt blue
 - Resolved v1/v2 font conflict in favor of v2 canonical authority while preserving licence and fallback gates.
 - Split motion technology by behavior instead of choosing CSS or springs categorically.
 - Replaced broad “animate only transform/opacity” dogma with a profiled hierarchy that allows tested `clip-path` and WAAPI.
+- Re-expressed the drawer curve token and rubber-band helper while preserving behavior, removing the last 12- and 16-word overlaps with the inspected source skills.
 - Made high-frequency keyboard motion a hard no.
 - Added exact evidence boundaries and owner-only creative acceptance.
 - Kept the uploaded skill free of executable scripts to reduce scan and authority surface.

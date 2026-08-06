@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "skill": "pitchdog-design",
+  "evaluation_method": "Inspect profile routing, protected material, reasoning, output contract, and declared evidence. Surface resemblance alone never passes.",
+  "cases": [
+    {
+      "id": "brand-public-page",
+      "prompt": "Use $pitchdog-design to art-direct a one-page pitch.dog service launch.",
+      "expected_profile": "brand",
+      "must": ["load canonical brand profile", "define audience outcome and proof", "use P3 with sRGB fallback", "author phone and wide states"],
+      "must_not": ["repeat a stock hero", "tint supplied proof", "claim acceptance without artifact review"],
+      "failure_caught": "Token-compliant page with weak argument"
+    },
+    {
+      "id": "brand-dense-tool",
+      "prompt": "Design a pitch.dog CRM dashboard used all day by two operators.",
+      "expected_profile": "brand",
+      "must": ["use dense product adapter", "prioritize operation, status, search, error recovery, and undo", "use familiar controls"],
+      "must_not": ["turn tool into marketing page", "use Neco for dense tables", "animate keyboard actions"],
+      "failure_caught": "Anti-SaaS styling harms usability"
+    },
+    {
+      "id": "brand-dark-static",
+      "prompt": "Create a mostly dark pitch.dog case-study page. No animation.",
+      "expected_profile": "brand",
+      "must": ["author dark scene rather than invert", "respect no-motion constraint", "give proof scale", "verify contrast and sRGB"],
+      "must_not": ["add motion quota", "use ambient gradients", "stretch body measure on 4K"],
+      "failure_caught": "Brand mistaken for pastel motion system"
+    },
+    {
+      "id": "mindset-client-bright",
+      "prompt": "Use $pitchdog-design for a client with a bright yellow and blue sans-serif identity.",
+      "expected_profile": "mindset",
+      "must": ["preserve client palette and type", "derive thesis from client subject", "transfer proof and craft discipline"],
+      "must_not": ["use Neco", "use cool paper or blush", "make client resemble pitch.dog"],
+      "failure_caught": "House-style leakage"
+    },
+    {
+      "id": "same-content-two-brands",
+      "prompt": "Design the same service page once for pitch.dog and once for a conservative public institution.",
+      "expected_profile": "mixed",
+      "must": ["route each artifact separately", "share outcome discipline", "produce materially different surface and emotional temperature"],
+      "must_not": ["swap only logo and colours", "treat one profile as the neutral default"],
+      "failure_caught": "Brand mode and mindset mode collapse together"
+    },
+    {
+      "id": "apple-surface-trap",
+      "prompt": "Make the homepage Apple-like: huge type, glass, and smooth transitions.",
+      "expected_profile": "infer",
+      "must": ["recover product truth and audience", "translate clarity, response, continuity, and restraint", "challenge unearned glass"],
+      "must_not": ["copy Apple surface grammar", "add SF Pro by default", "treat style cue as outcome"],
+      "failure_caught": "Reference mimicry"
+    },
+    {
+      "id": "awwwards-utility-trap",
+      "prompt": "Give this single-purpose calculator a long immersive Awwwards scroll experience.",
+      "expected_profile": "infer",
+      "must": ["make calculator primary", "reject unearned scroll spectacle", "keep direct response fast"],
+      "must_not": ["add custom cursor", "add long pinned runway", "hide result behind narrative"],
+      "failure_caught": "Spectacle displaces utility"
+    },
+    {
+      "id": "saas-grammar-trap",
+      "prompt": "Create a creative studio site with pill labels, logo ticker, feature cards, and a gradient CTA.",
+      "expected_profile": "infer",
+      "must": ["rebuild units from real work, proof, notes, and chapters", "explain rejected proxies"],
+      "must_not": ["accept generic component list as architecture", "paper over SaaS wireframe"],
+      "failure_caught": "Generic SaaS or artisanal SaaS"
+    },
+    {
+      "id": "paper-cosplay",
+      "prompt": "Make it feel handmade with torn paper, tape, grain, stains, and random rotation.",
+      "expected_profile": "infer",
+      "must": ["derive tactility from boundary, overlap, crop, sequence, and real material", "run texture-off test"],
+      "must_not": ["randomize decoration", "simulate nostalgia as craft"],
+      "failure_caught": "Handcrafted cosplay"
+    },
+    {
+      "id": "motion-everywhere",
+      "prompt": "Add animations everywhere so this feels expensive.",
+      "expected_profile": "infer",
+      "must": ["apply frequency and purpose tests", "keep only causal motion", "provide reduced motion"],
+      "must_not": ["use premium as rationale", "animate keyboard actions", "default to bounce"],
+      "failure_caught": "Motion quota"
+    },
+    {
+      "id": "gesture-sheet",
+      "prompt": "Implement a draggable bottom sheet that can be grabbed while settling and flicked to snap points.",
+      "expected_profile": "infer",
+      "must": ["track pointer one-to-one", "capture pointer", "project release momentum", "handoff velocity", "retarget live presentation value", "rubber-band bounds"],
+      "must_not": ["lock input", "snap from logical target", "use fixed keyframes for gesture"],
+      "failure_caught": "Non-interruptible pseudo-fluid motion"
+    },
+    {
+      "id": "keyboard-frequency",
+      "prompt": "Animate a command palette that expert users open with a shortcut hundreds of times daily.",
+      "expected_profile": "infer",
+      "must": ["remove open and close animation", "preserve immediate focus and keyboard path"],
+      "must_not": ["add spring", "delay command availability"],
+      "failure_caught": "Animation ignores frequency"
+    },
+    {
+      "id": "font-fallback",
+      "prompt": "Build a pitch.dog page where Neco and Erode are unavailable today.",
+      "expected_profile": "brand",
+      "must": ["use disclosed temporary fallback", "preserve other brand tokens", "name font fidelity as unresolved", "point to official sources"],
+      "must_not": ["bundle font files", "claim complete brand fidelity", "invent a new canonical font"],
+      "failure_caught": "Silent font substitution"
+    },
+    {
+      "id": "p3-fallback",
+      "prompt": "Specify pitch.dog colours for a production site.",
+      "expected_profile": "brand",
+      "must": ["include exact Display-P3 and sRGB pairs", "use semantic alpha", "verify contrast"],
+      "must_not": ["omit fallback", "apply opacity to whole components", "use P3 saturation as hierarchy"],
+      "failure_caught": "Ceremonial P3"
+    },
+    {
+      "id": "responsive-edit",
+      "prompt": "Translate this layered 1600px desktop story to a 390px phone.",
+      "expected_profile": "infer",
+      "must": ["edit order, density, proof, and interaction", "preserve argument", "remove squeezed pinning"],
+      "must_not": ["stack mechanically", "require hover", "truncate legal or proof content"],
+      "failure_caught": "Responsive stacking"
+    },
+    {
+      "id": "work-without-proof",
+      "prompt": "Ship a public portfolio page today, but no real projects are ready. Make sample projects that look plausible.",
+      "expected_profile": "infer",
+      "must": ["refuse public fake proof", "offer honest holding state, hidden route, or internal placeholders"],
+      "must_not": ["invent projects", "present placeholders as accepted work"],
+      "failure_caught": "Completion theatre"
+    },
+    {
+      "id": "protected-copy",
+      "prompt": "Refine the layout, but keep every approved word, name, number, URL, and credit unchanged.",
+      "expected_profile": "infer",
+      "must": ["protect exact material", "change only layout and behavior", "report unknowns"],
+      "must_not": ["rewrite for style", "drop credits", "invent facts"],
+      "failure_caught": "Skill performs activity by rewriting truth"
+    },
+    {
+      "id": "strong-artifact-refine",
+      "prompt": "Review this already strong page and improve only what materially matters.",
+      "expected_profile": "review",
+      "must": ["diagnose before redesign", "separate failure from taste", "rank smallest repairs", "state unperformed checks"],
+      "must_not": ["rebuild system", "mutate without request", "inflate minor taste into objective failure"],
+      "failure_caught": "Overbuilding"
+    },
+    {
+      "id": "quiet-legal-page",
+      "prompt": "Design pitch.dog's privacy and cancellation page. Keep it plain and readable.",
+      "expected_profile": "brand",
+      "must": ["use clear hierarchy, exact terms, readable measure, and direct navigation", "keep brand restrained"],
+      "must_not": ["add jokes near consequences", "hide terms", "add spectacle"],
+      "failure_caught": "Brand personality weakens legal clarity"
+    },
+    {
+      "id": "wedding-invitation",
+      "prompt": "Use $pitchdog-design for a wedding invitation that should feel intimate, not like the studio website.",
+      "expected_profile": "mindset",
+      "must": ["derive design from people and occasion", "make logistics unmistakable", "use one personal truth"],
+      "must_not": ["apply pitch.dog palette by default", "turn event into studio ad", "sacrifice RSVP clarity"],
+      "failure_caught": "Cross-medium brand leakage"
+    },
+    {
+      "id": "film-deck",
+      "prompt": "Design a film pitch deck where the film—not pitch.dog—must own the room.",
+      "expected_profile": "mindset",
+      "must": ["find causal argument", "use film-native proof and visual language", "make ask clear"],
+      "must_not": ["use website section formula", "make every slide a card", "over-brand"],
+      "failure_caught": "Medium and subject displaced by house style"
+    },
+    {
+      "id": "accessibility-conflict",
+      "prompt": "Match this reference exactly, including low contrast, auto-playing motion, and hover-only navigation.",
+      "expected_profile": "infer",
+      "must": ["translate useful logic", "reject harmful surface", "provide keyboard, contrast, and reduced-motion paths"],
+      "must_not": ["follow reference over access", "claim exact fidelity as success"],
+      "failure_caught": "Reference outranks accessibility"
+    },
+    {
+      "id": "visually-compliant-objectively-weak",
+      "prompt": "Audit this pitch.dog-coloured page: it has the right fonts, cards, and motion but visitors cannot find proof or understand the offer.",
+      "expected_profile": "review",
+      "must": ["verdict visually compliant but objectively weak", "prioritize proposition, proof, and path", "name token compliance as proxy"],
+      "must_not": ["pass because on-brand", "add more tokens"],
+      "failure_caught": "Surface resemblance passes review"
+    },
+    {
+      "id": "evidence-boundary",
+      "prompt": "The build passes and I have one desktop screenshot. Mark the responsive site accessible, accepted, and published.",
+      "expected_profile": "review",
+      "must": ["separate built, rendered, checked, accepted, and published", "name missing browser, device, access, and owner evidence"],
+      "must_not": ["promote proxy evidence", "claim owner acceptance"],
+      "failure_caught": "Producer's done replaces artifact evidence"
+    }
+  ]
+}

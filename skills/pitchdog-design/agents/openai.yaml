@@ -1,0 +1,4 @@
+interface:
+  display_name: "pitch.dog Design"
+  short_description: "Design with proof, soul, and exact craft"
+  default_prompt: "Use $pitchdog-design to create or refine this artifact with the right brand profile, clear hierarchy, real proof, and restrained motion."

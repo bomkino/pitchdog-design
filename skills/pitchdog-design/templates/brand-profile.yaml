@@ -1,0 +1,69 @@
+profile:
+  id: ""
+  name: ""
+  owner: ""
+  status: "accepted|inferred|provisional"
+  source_files: []
+  last_verified: "YYYY-MM-DD"
+
+actual_goal:
+  audience: ""
+  outcome: ""
+  action_or_decision: ""
+  costliest_false_success: ""
+  evidence: []
+
+protected_material:
+  copy: []
+  facts: []
+  names_and_pronouns: []
+  credits: []
+  assets: []
+  permissions: []
+
+typography:
+  families:
+    display: null
+    body: null
+    utility: null
+  official_sources: []
+  licence_status: "unknown"
+  fallbacks: {}
+  roles: {}
+  unresolved: []
+
+colour:
+  opaque: {}
+  semantic: {}
+  contrast_target: "WCAG 2.2 AA"
+  unresolved: []
+
+spacing_and_grid:
+  base_unit_px: null
+  tokens_px: []
+  canvases: {}
+  reading_measure: null
+
+surface_and_material:
+  principles: []
+  use: []
+  avoid: []
+
+components:
+  shared_foundations: []
+  authored_compositions: []
+
+motion:
+  principles: []
+  timings: {}
+  reduced_motion: ""
+
+accessibility_and_performance:
+  requirements: []
+  target_devices: []
+
+authority_notes:
+  accepted: []
+  inferred: []
+  provisional: []
+  unknown: []

@@ -1,0 +1,355 @@
+profile:
+  id: "pitchdog"
+  name: "pitch.dog"
+  version: "2.0.0"
+  status: "canonical"
+  mode: "explicit-or-owned-artifact"
+  principle: "Use our foundation. Give the subject its own answer."
+  anti_sameness: "Same standard. Different idea."
+
+actual_goal:
+  audience_outcome: >-
+    The intended person understands the offer or task, trusts nearby proof,
+    can act or recover, and remembers a distinct human studio.
+  costliest_false_success: >-
+    A beautiful, token-compliant artifact that hides proof, weakens usability,
+    feels generic, or makes every project resemble pitch.dog.
+  vulnerable_proxies:
+    - "Apple-like"
+    - "Awwwards-ready"
+    - "premium"
+    - "cinematic"
+    - "tactile"
+    - "Display-P3"
+    - "full-bleed"
+    - "dynamic"
+    - "spacious"
+
+typography:
+  rem_base_px: 16
+  families:
+    display:
+      name: "Neco"
+      official_source: "https://www.fontshare.com/fonts/neco"
+      fallback: '"Iowan Old Style", "Palatino Linotype", Georgia, serif'
+    body:
+      name: "Erode"
+      official_source: "https://www.fontshare.com/fonts/erode"
+      fallback: '"Iowan Old Style", "Palatino Linotype", Georgia, serif'
+    utility_mono:
+      name: "Geist Mono"
+      official_source: "https://vercel.com/font?type=mono"
+      fallback: '"SFMono-Regular", Menlo, Consolas, monospace'
+    dense_ui:
+      name: "Geist Sans"
+      official_source: "https://vercel.com/font"
+      fallback: "Inter, system-ui, sans-serif"
+  licensing_rule: >-
+    Verify current licence and availability from the official source before use.
+    Never bundle font binaries. Disclose temporary fallbacks and do not claim
+    complete brand fidelity after substitution.
+  roles:
+    display: "Neco"
+    h1_h2: "Neco"
+    intro_body: "Erode"
+    dense_ui_body: "Geist Sans"
+    eyebrow_folio: "Geist Mono"
+    utility_status: "Geist Mono"
+    caption: "Erode or Geist Mono according to semantic role"
+    project_title: "Project-led; Neco is default in Brand Mode"
+  web_scale_rem:
+    display_xl:
+      wide: 7.5
+      desktop: 6.0
+      tablet: 4.5
+      phone: 3.0
+      line_height_em: [0.90, 0.98]
+    display_h1:
+      wide: 5.5
+      desktop: 4.5
+      tablet: 3.5
+      phone: 2.625
+      line_height_em: [0.94, 1.02]
+    h2:
+      wide: 4.0
+      desktop: 3.25
+      tablet: 2.5
+      phone: 2.0
+      line_height_em: [0.98, 1.08]
+    h3:
+      wide: 2.25
+      desktop: 2.0
+      tablet: 1.75
+      phone: 1.5
+      line_height_em: [1.05, 1.18]
+    intro:
+      wide: 1.5
+      desktop: 1.375
+      tablet: 1.25
+      phone: 1.125
+      line_height_em: [1.30, 1.45]
+    body:
+      wide: 1.125
+      desktop: 1.125
+      tablet: 1.0625
+      phone: 1.0
+      line_height_em: [1.48, 1.62]
+    small:
+      wide: 0.9375
+      desktop: 0.9375
+      tablet: 0.875
+      phone: 0.875
+      line_height_em: [1.40, 1.55]
+    utility:
+      wide: 0.8125
+      desktop: 0.8125
+      tablet: 0.75
+      phone: 0.75
+      line_height_em: [1.25, 1.40]
+  tracking_em:
+    neco_display: [-0.035, -0.01]
+    erode_body: [-0.005, 0.01]
+    geist_mono_utility: [0.03, 0.08]
+  reading_measure_characters: [55, 70]
+
+colour:
+  opaque:
+    paper_neutral:
+      p3: "color(display-p3 0.964 0.961 0.972)"
+      srgb: "#F6F5F8"
+    paper_powder:
+      p3: "color(display-p3 0.900 0.925 0.957)"
+      srgb: "#E4ECF5"
+    paper_lilac:
+      p3: "color(display-p3 0.950 0.920 0.975)"
+      srgb: "#F2EBF8"
+    paper_mint:
+      p3: "color(display-p3 0.918 0.946 0.910)"
+      srgb: "#EAF1E8"
+    paper_blush:
+      p3: "color(display-p3 0.990 0.900 0.925)"
+      srgb: "#FDE9EE"
+    sheet:
+      p3: "color(display-p3 0.992 0.988 0.982)"
+      srgb: "#FDFCFB"
+    ink:
+      p3: "color(display-p3 0.055 0.054 0.060)"
+      srgb: "#0E0E0F"
+    muted_ink:
+      p3: "color(display-p3 0.37 0.38 0.41)"
+      srgb: "#5F6169"
+    ink_room:
+      p3: "color(display-p3 0.044 0.047 0.054)"
+      srgb: "#0B0C0E"
+    blue_black:
+      p3: "color(display-p3 0.050 0.061 0.080)"
+      srgb: "#0C1015"
+    panel_dark:
+      p3: "color(display-p3 0.083 0.085 0.097)"
+      srgb: "#151619"
+    dark_lilac:
+      p3: "color(display-p3 0.065 0.050 0.082)"
+      srgb: "#110D15"
+    dark_mint:
+      p3: "color(display-p3 0.043 0.070 0.058)"
+      srgb: "#0B120F"
+    dark_blush:
+      p3: "color(display-p3 0.090 0.050 0.058)"
+      srgb: "#170D0F"
+    light_ink:
+      p3: "color(display-p3 0.945 0.941 0.931)"
+      srgb: "#F1F0ED"
+    muted_light_ink:
+      p3: "color(display-p3 0.65 0.655 0.69)"
+      srgb: "#A6A7AF"
+    signal_vermilion:
+      p3: "color(display-p3 0.88 0.32 0.21)"
+      srgb: "#F34325"
+    signal_cobalt:
+      p3: "color(display-p3 0.13 0.31 0.80)"
+      srgb: "#0450D4"
+    signal_cobalt_dark:
+      p3: "color(display-p3 0.55 0.66 0.95)"
+      srgb: "#85A9F8"
+  alpha:
+    ink: [0.04, 0.08, 0.12, 0.14, 0.16, 0.24, 0.40, 0.64]
+    light_ink: [0.04, 0.08, 0.12, 0.16, 0.24, 0.40, 0.64]
+    vermilion: [0.12, 0.24, 0.40]
+    cobalt: [0.12, 0.24, 0.40]
+    sheet: [0.88, 0.96]
+    ink_room: [0.40, 0.64, 0.80, 0.88, 0.96]
+  rules:
+    - "Mostly monochrome; use signal colours as punctuation."
+    - "Project colour may change the room; never tint unapproved proof."
+    - "Use discrete editorial states, not continuous gradient soup."
+    - "Keep layer opacity at 100%; encode alpha in the colour token."
+    - "Verify sRGB fallback and contrast."
+
+spacing:
+  atomic_unit_px: 4
+  dominant_rhythm_px: 8
+  tokens_px: [4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128, 160, 192, 256]
+
+web_grid:
+  wide:
+    width_px: 1600
+    columns: 12
+    margin_px: 64
+    gutter_px: 32
+  desktop:
+    width_px: 1200
+    columns: 12
+    margin_px: 48
+    gutter_px: 24
+  tablet:
+    width_px: 810
+    columns: 8
+    margin_px: 32
+    gutter_px: 20
+  phone:
+    width_px: 390
+    columns: 4
+    margin_px: 20
+    gutter_px: 12
+  review_widths_px: [360, 390, 600, 768, 810, 834, 1024, 1200, 1366, 1440, 1600, 1920, 2560, 3840]
+
+web_canvas:
+  viewport_scene:
+    width: "fill"
+    max_width_px: null
+  wide_proof:
+    width_percent: 92
+    max_width_px: 3200
+  home_wide_proof:
+    max_width_px: 2560
+  editorial_core:
+    width: "fill"
+    max_width_px: 1760
+  reading_measure:
+    width: "fill"
+    optical_target_px: [680, 760]
+
+surface:
+  character: ["editorial", "tactile", "full-bleed", "cool-paper", "hard-edged", "authored", "warm"]
+  use:
+    - "hard edges"
+    - "fine rules"
+    - "purposeful overlap"
+    - "controlled stacks"
+    - "registration details"
+    - "real project residue"
+    - "contact shadows only where surfaces meet"
+  avoid:
+    - "scrapbook theatre"
+    - "vintage paper cosplay"
+    - "moving grain"
+    - "random rotation"
+    - "global glassmorphism"
+    - "universal rounded cards"
+
+radii_px:
+  none: 0
+  contact: 2
+  control: 4
+  circle: 999
+  rule: "Use radius only when conceptually justified."
+
+rules_px:
+  hairline: 1
+  strong: 2
+
+motion:
+  principles:
+    - "immediate response"
+    - "current-value retargeting"
+    - "spatial origin and return"
+    - "interruptible interaction"
+    - "zero bounce by default"
+    - "clarity before spectacle"
+  durations_ms:
+    press: [80, 120]
+    hover_focus: [140, 180]
+    form_status: [120, 200]
+    passive_reveal: [180, 260]
+    semantic_stagger: [0, 60]
+    panel: [300, 400]
+    scroll_state_settle: [200, 320]
+    reduced_motion_opacity: [120, 200]
+    ordinary_ui_max: 500
+  springs:
+    reposition:
+      damping_ratio: 1.0
+      response_seconds: 0.4
+    momentum_rotation:
+      damping_ratio: 0.8
+      response_seconds: 0.4
+    drawer_release:
+      damping_ratio: 0.8
+      response_seconds: 0.3
+  forbidden:
+    - "scroll-jacking"
+    - "site-wide smooth scroll"
+    - "large animated blur"
+    - "decorative loops"
+    - "default bounce"
+    - "fake momentum"
+    - "WebGL foundation"
+    - "desktop motion compressed onto phone"
+    - "input lock during motion"
+
+components:
+  philosophy: >-
+    Cards are pages, frames, proofs, notes, status rows, and index entries;
+    never a universal rounded tile.
+  shared_foundations:
+    - "viewport_scene"
+    - "wide_canvas"
+    - "editorial_core"
+    - "reading_measure"
+    - "section"
+    - "bleed"
+    - "theme_context"
+    - "navigation_shell"
+    - "ink_block"
+    - "editorial_link"
+    - "index_row"
+    - "utility_control"
+    - "proof_frame"
+    - "story_card"
+    - "offer_object"
+    - "testimonial_note"
+    - "status_row"
+    - "faq_row"
+    - "form_system"
+  rule: "Repeat foundations. Keep narrative compositions authored."
+
+proof:
+  placement: "Early and at meaningful scale."
+  preservation: "Never tint, invent, or replace owner-supplied proof without authority."
+  placeholders: "Named internal placeholders are allowed; visible public placeholders are not."
+
+accessibility:
+  target: "WCAG 2.2 AA"
+  claim_rule: "Do not claim conformance until the finished artifact is evaluated."
+  requirements:
+    - "complete keyboard path"
+    - "visible focus"
+    - "semantic structure"
+    - "reduced motion"
+    - "reduced transparency"
+    - "zoom and reflow"
+    - "useful errors"
+    - "announced status"
+    - "non-colour state"
+    - "sufficient touch targets"
+
+brand_modes:
+  pitchdog:
+    use_surface_profile: true
+  mindset:
+    use_surface_profile: false
+    preserve_target_brand: true
+  internal_product:
+    use_surface_profile: true
+    body_adapter: "Geist Sans"
+    priority: "task-first"

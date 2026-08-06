@@ -36,11 +36,20 @@ Review community skills before installation. This repository is deliberately tex
 
 ## Install in ChatGPT and Work
 
+ChatGPT desktop:
+
+1. Download [`pitchdog-design.skill`](https://github.com/bomkino/pitchdog-design/releases/latest/download/pitchdog-design.skill).
+2. Open the file with ChatGPT and complete its scan/install flow.
+
+ChatGPT web/mobile:
+
 1. Download [`pitchdog-design.zip`](https://github.com/bomkino/pitchdog-design/releases/latest/download/pitchdog-design.zip).
 2. In ChatGPT, open **Plugins → Skills → Create → Upload from your computer**.
 3. Choose the zip and complete ChatGPT's scan/install flow.
-4. Install separately on ChatGPT desktop and web/mobile. Personal Skills do not currently sync automatically between those surfaces.
-5. If workspace permissions allow, use the skill's `•••` menu → **Share** to publish it to selected people or the workspace library.
+
+Install separately on ChatGPT desktop and web/mobile. Personal Skills do not currently sync automatically between those surfaces. If workspace permissions allow, use the skill's `•••` menu → **Share** to publish it to selected people or the workspace library.
+
+The `.skill` and `.zip` downloads contain the same deterministic archive bytes; only the filename differs for native desktop handling.
 
 See OpenAI's current [Skills in ChatGPT](https://help.openai.com/en/articles/20001066) guide for plan and admin requirements.
 
@@ -93,6 +102,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install PyYAML==6.0.2
 .venv/bin/python scripts/validate-skill.py
 .venv/bin/python scripts/package-skill.py --output dist/pitchdog-design.zip
+.venv/bin/python scripts/package-skill.py --output dist/pitchdog-design.skill
 ```
 
 The package script produces a deterministic zip with one top-level `pitchdog-design/` folder, ready for ChatGPT upload.

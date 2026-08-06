@@ -19,6 +19,9 @@ Static package and adversarial behavior coverage pass. The skill distinguishes p
 | Third-party text overlap | Pass | No shared 12-word or 16-word prose sequence against inspected Apple or Emil skill files |
 | Font/binary boundary | Pass | No font or executable binary; installed skill remains text-only |
 | Local-link integrity | Pass | Every relative Markdown link resolves |
+| Public release round-trip | Pass | v1.0.1 asset downloaded from GitHub, hash-matched, extracted, revalidated, and compared byte-for-byte |
+| Codex global install | Pass | Public GitHub source installed through the `skills` CLI; 23 installed files byte-identical to release source |
+| ChatGPT web/cloud install | Pass | Upload scan cleared; skill appeared under Installed and Created by me; attached in a Work chat |
 
 ## Adversarial suite
 
@@ -55,6 +58,10 @@ Requires 1:1 pointer capture, grab offset, velocity history, momentum projection
 
 Review mode diagnoses before mutation, distinguishes objective failure from taste, uses a single `Before | After | Why` table for UI code, ranks smallest repairs, and reports unperformed evidence. A rebuild fails proportionality.
 
+### Live external-brand routing — pass
+
+ChatGPT Work received an external identity defined as bright yellow, cobalt blue, grotesk sans, and crisp utilitarian UI. The installed skill selected Mindset Mode, prohibited cool-paper tactility and dog motifs, and required an owner-approved brand source before treating the supplied cues as canonical.
+
 ## Repairs made during evaluation
 
 - Resolved v1/v2 font conflict in favor of v2 canonical authority while preserving licence and fallback gates.
@@ -66,4 +73,4 @@ Review mode diagnoses before mutation, distinguishes objective failure from tast
 
 ## Evidence not yet represented by static checks
 
-Independent fresh-agent output quality and a real design artifact still require usage evidence; no static validator can certify taste, accessibility conformance, browser behavior, or human acceptance. Those limits are encoded in the skill rather than hidden.
+A real design artifact still requires artifact-specific usage evidence; no static validator or routing probe can certify taste, accessibility conformance, browser behavior, or human acceptance. Those limits are encoded in the skill rather than hidden.

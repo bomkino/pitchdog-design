@@ -58,6 +58,17 @@ A separate source critic held the candidate until the following material defects
 
 The final source reread found no remaining priority 1–3 source defect.
 
-## Publication boundary
+## Publication and installation evidence
 
-This source checkpoint does not by itself prove a GitHub push, passing hosted workflow, tag, release asset, public download, or active Codex installation. Those states require post-commit readback and must be reported separately before the release is called complete.
+| State | Result | Evidence |
+| --- | --- | --- |
+| Release source committed and pushed | Pass | Commit `16594f65b85fc67d2fd081405bffc733dc547342` reached `origin/main` |
+| Hosted CI | Pass | GitHub Actions run `33679728465` validated and rebuilt the exact release-source commit |
+| Immutable tag | Pass | Annotated `v2.0.0` tag dereferences to the release-source commit |
+| GitHub Release | Pass | Public, non-draft, non-prerelease release with `.zip`, `.skill`, and both checksum manifests |
+| Public asset readback | Pass | Four assets downloaded anew; both manifests, archive CRC, 27-entry allowlist, source diff, and OpenAI validation passed |
+| Active Codex installation | Pass | Exact `v2.0.0` GitHub source installed; 27 installed files byte-match release source and public extraction |
+| Install provenance | Pass | Skills lock records repository `bomkino/pitchdog-design`, ref `v2.0.0`, path `skills/pitchdog-design/SKILL.md`, and folder hash `202811c23df47c0f837f2e6b1c463dc8546ceb3b` |
+| Recovery | Pass | Previous installed skill and pre-update lock were copied to a private backup outside the repository before replacement |
+
+GitHub source, release assets, and the active install are verified states. No design artifact was created by this release, so rendered-artifact quality and owner acceptance remain deliberately unclaimed.

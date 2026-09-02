@@ -42,7 +42,7 @@ Reject any thesis that can be pasted onto every project.
 A strong skill can produce:
 
 - Brand Mode with no motion;
-- Brand Mode as a dense dark interface;
+- Brand Mode as a dense interface whose Dark edition is real but not the sole edition;
 - Mindset Mode with a bright client palette and sans-serif identity;
 - a pitch.dog artifact with no cards or dogs;
 - an invitation with warmth but no website colours;
@@ -55,10 +55,10 @@ A strong skill can produce:
 Treat these as failures even when polished:
 
 - pitch.dog-coloured dashboard that is slow to operate;
-- client page using Neco and blush without authority;
+- client page importing pitch.dog typography or colour without authority;
 - long transformation that reveals no new information;
 - 4K view with tiny proof and stretched body copy;
-- tactile surface that collapses without grain;
+- tactile surface that needs a manufactured texture overlay to feel handled;
 - mobile composition that is only stacked desktop;
 - monochrome design whose hierarchy depends on colour;
 - brand page that claims care instead of demonstrating it.

@@ -4,6 +4,7 @@ Carry the standard of judgment across media; never make every medium imitate a w
 
 ## Decks and presentations
 
+- In Brand Mode, resolve typography from the canonical type-system non-web guidance; do not rebuild its role system from screenshots.
 - Find the argument before the slide system.
 - Give every slide one job and the sequence a causal spine.
 - Let writing and design move together.
@@ -14,6 +15,7 @@ Carry the standard of judgment across media; never make every medium imitate a w
 
 ## Documents, proposals, reports, invoices, and rate cards
 
+- Use the active brand's governed typography source and record any substitution.
 - Make sustained reading, wayfinding, evidence, footnotes, numbers, and terms recoverable.
 - Use alignment and spacing to reduce anxiety.
 - Keep warmth in order, headings, and microcopy.
@@ -38,6 +40,7 @@ Carry the standard of judgment across media; never make every medium imitate a w
 
 ## Print and editorial
 
+- Resolve font handoff, roles, and known metadata caveats through the active typography authority.
 - Let paper, ink, crop, fold, binding, margin, sequence, and production limits create real tactility.
 - Confirm trim, bleed, colour profile, resolution, overprint, and proofing requirements.
 - Do not simulate web motion or fake physical distress.

@@ -4,14 +4,7 @@
 
 Author priority, sequence, interaction, and density for each relevant context. Preserve the argument, not desktop geometry.
 
-At minimum, inspect:
-
-- 360 and 390px phones;
-- 768/810/834px tablets;
-- 1024/1200/1366/1440/1600px desktop and wide;
-- 1920, 2560, and 3840px where large-display composition matters;
-- portrait and landscape when the artifact supports both;
-- text expansion and 200% zoom.
+At minimum, inspect the smallest supported phone, a representative phone, one intermediate/tablet width, ordinary desktop, and the widest real display. Add a width at each observed layout failure. Also inspect portrait and landscape when supported, text expansion, 200% zoom, and 400% reflow.
 
 Change order, proof scale, crop, sticky behavior, or control model when the device demands it. Do not use breakpoint count as proof of responsive authorship.
 
@@ -29,8 +22,9 @@ Require:
 - announced status changes;
 - sufficient text and non-text contrast;
 - status not encoded by colour, motion, or sound alone;
+- meaningful icons with sufficient non-text contrast and no icon-only ambiguity;
 - reduced-motion and reduced-transparency alternatives;
-- 200% zoom and 400% reflow without lost content or horizontal page scroll;
+- 200% zoom and 400% reflow without lost content or horizontal page scroll, except genuinely two-dimensional content that requires both axes; contain that exception locally with an operable labelled scroll region rather than making the page scroll sideways;
 - adequate touch targets and spacing;
 - text alternatives for meaningful visual output;
 - captions/transcripts where media requires them;
@@ -48,6 +42,7 @@ Accessibility can override aesthetic preference. Treat that as design doing its 
 - Avoid heavy animated blur, shadows, WebGL foundations, site-wide smooth scrolling, and unnecessary third-party embeds.
 - Reserve `will-change` for imminent motion; remove it afterward where practical.
 - Test code components separately.
+- Test Light, Dark, first-load System, explicit overrides, and reset-to-System without duplicating content or hiding focus.
 - Inspect layout shift, long tasks, console errors, broken links, and network failure.
 - Test on a mid-range phone and ordinary connection, not only a powerful desktop.
 
@@ -72,4 +67,4 @@ Use language that states what happened, what remains safe, and how to recover.
 
 Say exactly what was checked and where. A source file, screenshot, green test, preview URL, or deployment receipt proves only its own layer.
 
-Do not promote “built” to “accessible,” “accepted,” or “published” without corresponding evidence.
+Do not promote “built” to “accessible,” “installed,” “deployed,” “published,” “live,” or “accepted” without corresponding evidence.

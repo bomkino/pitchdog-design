@@ -1,77 +1,63 @@
 # Evaluation report
 
-Date: 2026-08-06
-Release: v1.0.2
+Date: 2026-09-03
+Release candidate: v2.0.0
 
 ## Objective verdict
 
-Static package and adversarial behavior coverage pass. The skill distinguishes pitch.dog Brand Mode from external-brand Mindset Mode, keeps detailed authority behind progressive disclosure, reconciles gesture-driven springs with ordinary CSS/WAAPI transitions, protects exact content, and makes artifact evidence—not surface resemblance—the completion gate.
+The v2 source and package hold as a design-decision system. The skill routes pitch.dog and external-brand work differently, defers typography to its governed repository, requires authored Light and Dark states with System default, governs Phosphor without erasing external icon authority, prohibits additive grain, and preserves composition outside the component kit.
 
-## Deterministic results
+This verdict covers source structure, package integrity, and fresh decision-behaviour probes. It does not certify the taste, accessibility, performance, rendering, or owner acceptance of a future design artifact.
+
+## Structural and package evidence
 
 | Check | Result | Evidence |
 | --- | --- | --- |
-| OpenAI `quick_validate.py` | Pass | Valid name, frontmatter, description, and structure |
-| Repository validator | Pass | 23 required files, 24 evals, 19 P3/sRGB colour pairs, 153-line `SKILL.md` |
-| `skills` CLI discovery | Pass | One installable skill found: `pitchdog-design` |
-| ChatGPT zip round-trip | Pass | 23 files; extracted folder byte-identical to source; extracted skill revalidated |
-| Package determinism | Pass | Fixed archive paths, timestamps, permissions, compression, and SHA-256 receipt |
-| Third-party text overlap | Pass | No shared 12-word or 16-word prose sequence against inspected Apple or Emil skill files |
-| Font/binary boundary | Pass | No font or executable binary; installed skill remains text-only |
-| Local-link integrity | Pass | Every relative Markdown link resolves |
-| Public release round-trip | Pass | v1.0.1 asset downloaded from GitHub, hash-matched, extracted, revalidated, and compared byte-for-byte |
-| Codex global install | Pass | Public GitHub source installed through the `skills` CLI; 23 installed files byte-identical to release source |
-| ChatGPT web/cloud install | Pass | Upload scan cleared; skill appeared under Installed and Created by me; attached in a Work chat |
+| OpenAI `quick_validate.py` | Pass | Valid skill name, frontmatter, description, and structure |
+| Repository validator | Pass | Exact 27-file allowlist; UTF-8/text-only and no-symlink boundary; ten live profile references; 15 eval specifications; 110-line entrypoint |
+| Local-link and privacy scan | Pass | Local Markdown links resolve; no user path, mounted-volume path, or local file URL in published text source |
+| `skills` CLI discovery | Pass | Local repository exposes one installable skill: `pitchdog-design` |
+| Package determinism | Pass | `.zip` and `.skill` are byte-identical at SHA-256 `ef5276f0f47983beefaa4fee2cd59d496a2a3d57ebda7b38fa08746ddd0aadd9` |
+| Package round-trip | Pass | 27 archive entries; extracted skill byte-matches source and passes OpenAI validation |
+| Diff hygiene | Pass | `git diff --check` reports no whitespace error |
 
-## Adversarial suite
+The repository validator is a structural boundary check. Phrase sentinels and consistency assertions guard known regressions; they do not prove semantic quality or behaviour by themselves.
 
-All 24 cases contain an explicit profile, required behaviors, forbidden behaviors, and named failure mode.
+## Fresh behavioural evaluation
 
-Coverage includes:
+Independent forward runs exercised all 15 case specifications. Each run had an expected profile, required decisions, forbidden outcomes, and a named failure. The first pass was allowed to fail.
 
-- public pitch.dog page, dense internal tool, dark/no-motion Brand Mode;
-- bright external client and same-content/two-brand separation;
-- Apple, Awwwards, SaaS, paper, and motion proxy traps;
-- interruptible sheet physics and high-frequency keyboard behavior;
-- missing brand fonts, P3 fallback, semantic alpha;
-- authored phone translation and absent portfolio proof;
-- protected copy and surgical refinement;
-- legal page, invitation, film deck, and accessibility conflict;
-- visually compliant but objectively weak review;
-- built/rendered/checked/accepted/published evidence separation.
+The eight Brand Mode cases initially met all 35 required decisions and 29 of 30 forbidden-outcome checks. The real miss was destructive icon semantics: an accessible name alone still allowed an icon-only destructive action. The final contract now requires visible text or an equally explicit adjacent confirmation for destructive, irreversible, permission-changing, and privacy-sensitive actions.
 
-## Representative reasoning passes
+Seven Mindset, proof, system, review, and print cases then exposed four authority seams: external Phosphor fallback was not explicitly provisional; theme rules could overrule external values without recording inference; Light/Dark language leaked into print; and one near-term component use could be promoted as a reusable second use. Fixtureless review and component prompts also needed to reward an evidence hold instead of inviting invented findings.
 
-### Brand public page — pass
+After repair, focused reruns passed the affected cases and adjacent regressions:
 
-Routes to Brand Mode, loads canonical profile plus web/colour/grid references, requires audience outcome and early proof, preserves project media, and checks phone/wide states. Correct tokens cannot rescue a weak proposition.
+- Brand editorial scenes retain one primary event; dense tools use task and state hierarchy instead.
+- Accepted external typography, colour, material, and icon authority remains intact.
+- Missing external theme modes and icon direction are explicitly provisional until owner acceptance.
+- Reusable extraction requires two representative real uses; a near-term use permits only a local pilot.
+- Physical work resolves colour through its production profile and proof, not interface themes.
+- Missing artifacts produce a named evidence hold, not fabricated critique.
+- All no-grain, immutable-type-pin, System-theme, authored-phone, and static-first-motion guards remained intact.
 
-### Bright client identity — pass
+These are reasoning probes against supplied case facts, not built or rendered artifacts. Counts describe adherence to the eval specification; they are not a taste score.
 
-Routes to Mindset Mode, preserves client yellow/blue palette and sans-serif type, loads no pitch.dog token authority, and transfers proof, hierarchy, humane states, and finish. Neco, paper, blush, and house compositions are explicit leakage failures.
+## Whole-artifact criticism and repairs
 
-### Interruptible bottom sheet — pass
+A separate source critic held the candidate until the following material defects were repaired:
 
-Requires 1:1 pointer capture, grab offset, velocity history, momentum projection, current-value retargeting, velocity handoff, snap selection, soft bounds, multi-touch protection, reversal, and reduced motion. Fixed keyframes and input locks fail.
+- global production typography, palette, and motion values were removed or made project-provisional;
+- the always-loaded profile was reduced from a duplicated 263-line brand kit to a 115-line authority router;
+- theme selection and effective theme were separated, including native `color-scheme` behaviour;
+- external material language was protected while the owner-wide no-additive-grain rule remained universal;
+- the design-system gate was aligned everywhere to two observed real uses;
+- evidence states now separate edited, built, rendered, checked, installed, deployed, published, live, and accepted;
+- package validation changed from an extension blacklist to an exact allowlist with UTF-8 verification;
+- exact private research fingerprints and inventory counts were moved to a private receipt.
 
-### Strong existing page — pass
+The final source reread found no remaining priority 1–3 source defect.
 
-Review mode diagnoses before mutation, distinguishes objective failure from taste, uses a single `Before | After | Why` table for UI code, ranks smallest repairs, and reports unperformed evidence. A rebuild fails proportionality.
+## Publication boundary
 
-### Live external-brand routing — pass
-
-ChatGPT Work received an external identity defined as bright yellow, cobalt blue, grotesk sans, and crisp utilitarian UI. The installed skill selected Mindset Mode, prohibited cool-paper tactility and dog motifs, and required an owner-approved brand source before treating the supplied cues as canonical.
-
-## Repairs made during evaluation
-
-- Resolved v1/v2 font conflict in favor of v2 canonical authority while preserving licence and fallback gates.
-- Split motion technology by behavior instead of choosing CSS or springs categorically.
-- Replaced broad “animate only transform/opacity” dogma with a profiled hierarchy that allows tested `clip-path` and WAAPI.
-- Re-expressed the drawer curve token and rubber-band helper while preserving behavior, removing the last 12- and 16-word overlaps with the inspected source skills.
-- Made high-frequency keyboard motion a hard no.
-- Added exact evidence boundaries and owner-only creative acceptance.
-- Kept the uploaded skill free of executable scripts to reduce scan and authority surface.
-
-## Evidence not yet represented by static checks
-
-A real design artifact still requires artifact-specific usage evidence; no static validator or routing probe can certify taste, accessibility conformance, browser behavior, or human acceptance. Those limits are encoded in the skill rather than hidden.
+This source checkpoint does not by itself prove a GitHub push, passing hosted workflow, tag, release asset, public download, or active Codex installation. Those states require post-commit readback and must be reported separately before the release is called complete.

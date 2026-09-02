@@ -2,6 +2,6 @@
 
 This skill is original pitch.dog / bomkino work released under 0BSD.
 
-Interaction guidance was independently synthesized with acknowledgement to Apple's public design sessions and Emil Kowalski's publicly discussed design-engineering craft. No third-party skill file or font binary is included. Third-party marks, fonts, services, and linked works retain their own terms. No affiliation or endorsement is implied.
+Its process was informed by pitch.dog's own design research and public primary material from Matt Pocock, the Agent Skills specification, GOV.UK Design System, GitHub Primer, Material Design, Phosphor Icons, Apple, and Emil Kowalski. No third-party skill file, design-system documentation, font binary, private source asset, or proprietary course material is included.
 
-See the public repository notice for full provenance.
+The linked pitch.dog Type System and all third-party marks, fonts, services, and works retain their own terms. See the repository NOTICE.md for provenance.

@@ -44,19 +44,7 @@ Do not assume a library shorthand is compositor-only. Profile actual frames. Pre
 
 ## Timing and easing
 
-Brand starting values:
-
-| Interaction | Timing |
-| --- | ---: |
-| Pointer-down / press feedback | 80–120ms |
-| Hover / focus | 140–180ms |
-| Form or status change | 120–200ms |
-| Passive reveal | 180–260ms |
-| Semantic group stagger | 0–60ms |
-| Menu, disclosure, panel | 300–400ms |
-| Scroll-state settle | 200–320ms |
-
-Keep ordinary UI below 500ms and usually below 300ms. Long timing is allowed when the user is deliberately holding or scrubbing, never while the system is merely responding.
+Resolve production timing and curves from accepted project or medium authority. This skill owns no global motion tokens. When authority is absent, calibrate inside the real artifact and record the result as provisional: press feedback should feel immediate; hover, focus, form, and status response should be quick enough to preserve causality; panels may take only the time needed to explain their origin and destination. Long timing is allowed while the user is deliberately holding or scrubbing, never while the system is merely responding.
 
 Easing selection:
 
@@ -66,22 +54,12 @@ Easing selection:
 - constant progress: linear;
 - direct gesture: no easing while held; track 1:1.
 
-Useful CSS curves:
-
-```css
-:root {
-  --pd-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
-  --pd-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
-  --pd-spatial-panel: cubic-bezier(.32, .72, 0, 1);
-}
-```
-
-Never use `ease-in` for an ordinary UI entrance; delayed response feels broken.
+Tune curves against the specific distance, scale, frame rate, input, and interruption behaviour. Never promote a copied curve into a brand token without project evidence. Avoid `ease-in` for an ordinary UI entrance; delayed response feels broken.
 
 ## Direct manipulation
 
 - Respond on pointer-down; commit on pointer-up.
-- Let content follow the pointer 1:1 after a small direction threshold near 10px.
+- Let content follow the pointer 1:1 after a small direction threshold calibrated to the device, target size, and competing gestures.
 - Preserve the offset where the object was grabbed; do not snap its center to the pointer.
 - Use Pointer Events and `setPointerCapture()` so tracking survives leaving bounds.
 - Ignore additional touch points after a drag begins.
@@ -89,21 +67,11 @@ Never use `ease-in` for an ordinary UI entrance; delayed response feels broken.
 - Detect plausible gestures in parallel, then cancel losers when intent becomes clear.
 - Keep input enabled during motion.
 
-Allow a tap to cancel when the pointer leaves its padded target and recover when it returns. Provide roughly 10px hysteresis where the platform allows.
+Allow a tap to cancel when the pointer leaves its padded target and recover when it returns. Calibrate hysteresis to the target, input precision, and platform convention.
 
 ## Momentum and springs
 
-Default to zero bounce. Add a small under-damped response only when a physical gesture supplied momentum.
-
-Starting spring qualities:
-
-| Use | Damping ratio | Response |
-| --- | ---: | ---: |
-| Reposition | 1.0 | 0.4s |
-| Rotation after gesture | 0.8 | 0.4s |
-| Drawer or sheet release | 0.8 | 0.3s |
-
-Treat response as a behavior parameter, not fixed duration.
+Start critically damped for ordinary repositioning. Use a slightly under-damped response only when a physical gesture supplied momentum and the extra travel improves legibility. Tune response and damping from the real distance, mass impression, release velocity, and device; record them in the project rather than this skill. Treat response as a behavior parameter, not a fixed duration.
 
 ### Interruption
 
@@ -124,22 +92,22 @@ Guard zero or near-zero remaining distance.
 Choose a destination from projected momentum, then animate to it with release velocity:
 
 ```js
-function project(initialVelocity, decelerationRate = 0.998) {
+function project(initialVelocity, decelerationRate) {
   return (initialVelocity / 1000) * decelerationRate / (1 - decelerationRate);
 }
 
-const projected = current + project(releaseVelocity);
+const projected = current + project(releaseVelocity, measuredDecelerationRate);
 const target = nearestSnapPoint(projected);
 ```
 
-Use a lower rate such as `0.99` for a shorter projection. Validate with real device input rather than copying a number blindly.
+Pass a project-calibrated rate and validate it with real device input rather than copying a number blindly.
 
 ### Soft boundaries
 
 Continue responding past a bound with increasing resistance:
 
 ```js
-function resistBeyondEdge(distance, span, resistance = 0.55) {
+function resistBeyondEdge(distance, span, resistance) {
   const safeSpan = Math.max(1, span);
   const magnitude = Math.abs(distance);
   const compressed = safeSpan *
@@ -165,11 +133,11 @@ Hard stops feel frozen; endless free travel feels broken.
 
 ### Pressable elements
 
-Register the press immediately. A subtle `scale(0.97)` can work for a physically sized button; a ruled row may instead use colour, inset, or registration shift. Do not force scale on every control.
+Register the press immediately. A slight scale change can work for a physically sized button; a ruled row may instead use colour, inset, or registration shift. Do not force scale on every control, and tune any scale change in the artifact.
 
 ### Entrances
 
-Do not enter from `scale(0)`. Begin near the final form, commonly `scale(0.95–0.98)` plus opacity. The object should not appear from mathematical nothing.
+Do not enter from mathematical nothing. Begin near the final form and use opacity or modest scale only when it clarifies origin. Tune the starting value in the artifact.
 
 ### Tooltips
 
@@ -177,7 +145,7 @@ Delay the first tooltip enough to avoid accidental activation. Once one is open,
 
 ### Lists
 
-Use 30–80ms semantic stagger only for decorative entry. Never block interaction until stagger completes. Coordinate opacity with height/position by inspecting frames; no universal formula replaces tuning.
+Use a brief semantic stagger only for decorative entry. Never block interaction until stagger completes. Coordinate opacity with height or position by inspecting frames; no universal formula replaces tuning.
 
 ### Hold-to-confirm
 
@@ -201,7 +169,7 @@ For sound and haptics:
 
 ### Reduced motion
 
-Replace travel, pinning, parallax, large scale, and bounce with direct state changes or 120–200ms opacity. Preserve content order, state, and orientation.
+Replace travel, pinning, parallax, large scale, and bounce with direct state changes or a brief project-calibrated opacity transition. Preserve content order, state, and orientation.
 
 ### Reduced transparency
 

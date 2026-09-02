@@ -29,7 +29,9 @@ Every principal route can be a first entrance. Give it a page-specific propositi
 
 Favor one locator or eyebrow, one memorable headline, one plain explanation, then proof or action. A semantic turn and its practical benefit should be the same thought.
 
-Give one object authority per view. Avoid a giant headline, animated object, ticker, hovering cards, and several equal calls to action competing at once.
+Give one object authority in an authored editorial scene. In a dense tool, give the active task, decision, or failure the clearest hierarchy. Avoid a giant headline, animated object, ticker, hovering cards, and several equal calls to action competing at once.
+
+In Brand Mode, resolve typography through [typography authority](typography-authority.md). Consume semantic roles from the pinned source; do not recreate its families, scales, measures, or wrapping rules in page-local styles.
 
 ## Proof and density
 
@@ -60,6 +62,8 @@ Share behavior when one authority materially helps:
 
 Keep a composition page-specific when its meaning comes from one narrative or unique choreography. Never begin with a universal section component.
 
+For every new digital build, implement the [Light, Dark, System and resolved-icon contract](digital-theme-and-icons.md). Theme and icon states belong to the component contract, not a finishing pass.
+
 ## Responsive authorship
 
 Phone is an edited edition. It may change order, density, proof sequence, crop, overlap, sticky behavior, controls, and interaction model while preserving argument and truth.
@@ -80,19 +84,21 @@ Prefer Framer's native systems:
 - Forms and CMS;
 - native effects.
 
-Use `1rem = 16px` at Wide, Desktop, Tablet, and Phone. Use REM for font size, EM or percentage for leading, native tracking controls, and px spacing tokens. Give every text-bearing reusable component explicit Desktop, Tablet, and Phone typography.
+Mirror the pinned type system's named roles, metrics, responsive behaviour, and fallback states into Framer Text Styles. Do not invent a root size, scale, measure, tracking value, or unit conversion here. Translate the resolved intent into native controls, and map every text-bearing reusable component to an explicit named role for each relevant context.
 
 Do not translate CSS `clamp()`, `calc()`, `min()`, `max()`, `ch`, or rem/em frame widths into fake Framer canvas instructions. Translate accepted intent into native controls.
 
 Use code components only for approved behavior native Framer cannot reliably deliver, such as measured collision handling, estimator logic, or a real tool engine. Do not build a parallel React site inside Framer.
 
-Inspect Preview and published behavior, not canvas alone. Keep built, rendered, checked, accepted, and published separate.
+Inspect Preview and published behavior, not canvas alone. Keep built, rendered, checked, deployed, published, live, and accepted separate.
+
+Framer does not make a code package authoritative. Mirror the resolved type roles and theme semantics into native Text Styles, Colour Styles, Components, and Variables, and record which pinned source they reflect.
 
 ## Internal tools
 
 Start with the operation, data, form, or output. Use familiar controls, compact but readable density, exact status, direct error recovery, undo where valuable, and restrained motion.
 
-Brand through hierarchy, type roles, paper/ink/status colour, humane language, and finish. Do not make the team cross a campaign page to use a tool.
+Brand through hierarchy, resolved type roles, semantic status colour, humane language, and finish. Do not make the team cross a campaign page to use a tool.
 
 ## Verification
 

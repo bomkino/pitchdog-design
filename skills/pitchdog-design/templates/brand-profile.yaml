@@ -22,20 +22,34 @@ protected_material:
   permissions: []
 
 typography:
-  families:
-    display: null
-    body: null
-    utility: null
-  official_sources: []
+  authority_repository: null
+  immutable_ref: null
+  resolved_commit: null
+  semantic_roles_source: null
+  implementation_source: null
   licence_status: "unknown"
-  fallbacks: {}
-  roles: {}
+  migration_authority: "unknown"
   unresolved: []
 
-colour:
-  opaque: {}
-  semantic: {}
+digital:
+  theme:
+    choices: ["system", "light", "dark"]
+    default: "system"
+    source_status: "accepted|inferred|provisional"
+  icons:
+    family: null
+    official_source: null
+    source_status: "accepted|inferred|provisional"
+    project_pin: null
+
+colour_and_material:
+  semantic_roles: {}
   contrast_target: "WCAG 2.2 AA"
+  intrinsic_source_texture: []
+  additive_texture_policy: "forbid added grain, noise, turbulence, distressed overlays, and pseudo-texture"
+  principles: []
+  use: []
+  avoid: []
   unresolved: []
 
 spacing_and_grid:
@@ -44,14 +58,10 @@ spacing_and_grid:
   canvases: {}
   reading_measure: null
 
-surface_and_material:
-  principles: []
-  use: []
-  avoid: []
-
 components:
   shared_foundations: []
   authored_compositions: []
+  evidence_for_extraction: []
 
 motion:
   principles: []

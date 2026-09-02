@@ -20,12 +20,13 @@ Keep the target's:
 
 - typefaces and fallback rules;
 - palette and contrast logic;
+- theme and icon authority;
 - voice, names, and accepted copy;
 - marks, assets, crops, and permissions;
 - cultural and material context;
 - established interaction patterns where useful.
 
-Do not import Neco, Erode, Geist Mono, cool paper, vermilion, cobalt, dogs, deck frames, hard edges, or pitch.dog page motifs unless the user asks and the choice serves the subject.
+Do not import the pitch.dog type system, palette, dogs, proof frames, page grammar, or material language merely because this skill is active. For new digital work, author Light, Dark, and System-default states from the target brand's accepted values. If the authority lacks a mode, label the derived state provisional until owner acceptance; if it explicitly forbids one, preserve the conflict and ask. Preserve an accepted icon family. When none exists, Phosphor is a provisional system choice until owner acceptance. Keep texture intrinsic to approved client art, but obey the skill-wide no-additive-grain boundary.
 
 ## Transfer judgment
 

@@ -12,6 +12,7 @@
 
 - Active profile: Brand Mode / Mindset Mode
 - Current brand authority:
+- Typography source, immutable ref, and resolved commit:
 - Accepted copy and facts:
 - Available proof:
 - Protected material:
@@ -29,10 +30,14 @@
 - One-sentence visual thesis:
 - Creative dials: choose 2–3
 - Dominant object or idea:
+- Quiet secondary event, if earned:
 - Narrative or task spine:
 - Type roles:
+- Digital Light / Dark / System theme roles, if applicable:
+- Icon authority:
 - Colour roles:
 - Material logic:
+- Additive texture boundary:
 - Interaction or motion purpose:
 - What stays still:
 
@@ -48,6 +53,7 @@
 - Phone:
 - Tablet:
 - Desktop/wide:
+- Digital Light / Dark / System, if applicable:
 - Reduced motion/transparency:
 - Other media or states:
 

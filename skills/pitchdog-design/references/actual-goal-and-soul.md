@@ -50,7 +50,7 @@ Reduce needless labour. Use clear labels, humane errors, preserved work, generou
 
 ### Love
 
-Finish the parts that do not photograph well: alt text, legal terms, slow networks, ordinary phones, 200% zoom, dark mode, private states, credits, fallbacks, file names, and handover. Love is operational care.
+Finish the parts that do not photograph well: alt text, legal terms, slow networks, ordinary phones, 200% zoom, both authored themes with System default, private states, credits, fallbacks, file names, and handover. Love is operational care.
 
 ### Wit
 

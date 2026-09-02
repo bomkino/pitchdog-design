@@ -76,7 +76,7 @@
 
 **Failure:** craft surface hides generic structure.
 
-**Repair:** run texture-off and silhouette tests; redesign structure.
+**Repair:** remove the manufactured layer, run the silhouette test, and redesign the structure.
 
 ### Paper cosplay
 
@@ -168,7 +168,7 @@
 
 **Failure:** the real artifact, device, or audience remains untested.
 
-**Repair:** inspect the rendered result and keep built, checked, accepted, and published distinct.
+**Repair:** inspect the real result and keep built, rendered, checked, installed, deployed, published, live, and accepted distinct.
 
 ### Overbuilding
 

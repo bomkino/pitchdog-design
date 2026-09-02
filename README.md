@@ -1,11 +1,15 @@
 # pitch.dog Design
 
-An open Agent Skill for making design useful, specific, warm, exact, and alive—without turning every project into the same house style.
+An open Agent Skill for making design useful, specific, warm, exact, and alive—without turning every subject into the same house style.
 
-It works in two profiles:
+Version 2 replaces the old token-heavy draft with a governed process:
 
-- **Brand Mode:** canonical pitch.dog type roles, Display-P3 and sRGB colour, spacing, grid, surfaces, motion, responsive behavior, and finishing standard.
-- **Mindset Mode:** pitch.dog's judgment, proof discipline, rhythm, care, and artifact review in service of somebody else's identity.
+- **Brand Mode:** pitch.dog authority, real proof, authored composition, and medium-specific craft.
+- **Mindset Mode:** the same standard of judgment in service of somebody else's identity.
+- **Typography:** resolved from the canonical [pitch.dog Type System](https://github.com/bomkino/pitchdog-type-system), verified and pinned per artifact; no copied font truth.
+- **Digital:** Light and Dark are both authored, System is the initial default, and Phosphor is the Brand/unbranded icon family; accepted external icon authority stays intact.
+- **Material:** tactility comes from real art, edges, crop, overlap, contact, marks, and evidence. Additive grain and noise are forbidden.
+- **Website language:** quiet field, loud work, one strange little thing in each authored scene—relationships, not a homepage template.
 
 The governing rule: **design with a spine, not a uniform.**
 
@@ -16,103 +20,71 @@ The governing rule: **design with a spine, not a uniform.**
 
 Codex:
 
-```bash
-npx skills add bomkino/pitchdog-design --skill pitchdog-design -g -a codex -y
-```
+    npx skills add bomkino/pitchdog-design --skill pitchdog-design -g -a codex -y
 
-Every agent supported by the `skills` CLI:
+Every agent supported by the skills CLI:
 
-```bash
-npx skills add bomkino/pitchdog-design --skill pitchdog-design -g -a '*' -y
-```
+    npx skills add bomkino/pitchdog-design --skill pitchdog-design -g -a '*' -y
 
 Update later:
 
-```bash
-npx skills update pitchdog-design -g -y
-```
+    npx skills update pitchdog-design -g -y
 
-Review community skills before installation. This repository is deliberately text-only inside the skill: no executable code, remote tool dependency, secret, tracking script, or font binary.
+Review community skills before installation. The distributed skill is deliberately text-only: no executable code, remote tool declaration, secret, telemetry, font binary, or image asset.
 
-## Install in ChatGPT and Work
+## Install the exact v2.0.0 archive
+
+Codex, pinned to the release tag:
+
+    npx skills add https://github.com/bomkino/pitchdog-design/tree/v2.0.0 --skill pitchdog-design -g -a codex -y
 
 ChatGPT desktop:
 
-1. Download [`pitchdog-design.skill`](https://github.com/bomkino/pitchdog-design/releases/latest/download/pitchdog-design.skill).
-2. Open the file with ChatGPT and complete its scan/install flow.
+1. Download [pitchdog-design.skill](https://github.com/bomkino/pitchdog-design/releases/download/v2.0.0/pitchdog-design.skill).
+2. Open it with ChatGPT and complete its scan/install flow.
 
 ChatGPT web/mobile:
 
-1. Download [`pitchdog-design.zip`](https://github.com/bomkino/pitchdog-design/releases/latest/download/pitchdog-design.zip).
-2. In ChatGPT, open **Plugins → Skills → Create → Upload from your computer**.
-3. Choose the zip and complete ChatGPT's scan/install flow.
+1. Download [pitchdog-design.zip](https://github.com/bomkino/pitchdog-design/releases/download/v2.0.0/pitchdog-design.zip).
+2. Open **Plugins → Skills → Create → Upload from your computer**.
+3. Choose the archive and complete the scan/install flow.
 
-Install separately on ChatGPT desktop and web/mobile. Personal Skills do not currently sync automatically between those surfaces. If workspace permissions allow, use the skill's `•••` menu → **Share** to publish it to selected people or the workspace library.
+Availability and upload permissions vary by product and workspace. Check OpenAI's current [Skills in ChatGPT](https://help.openai.com/en/articles/20001066-skills-in-chatgpt) guidance before installation.
 
-The `.skill` and `.zip` downloads contain the same deterministic archive bytes; only the filename differs for native desktop handling.
-
-See OpenAI's current [Skills in ChatGPT](https://help.openai.com/en/articles/20001066) guide for plan and admin requirements.
+The .skill and .zip assets contain the same deterministic bytes; only the filename differs for native desktop handling.
 
 ## Use
 
-Invoke explicitly:
+    Use $pitchdog-design to art-direct this pitch.dog landing page.
 
-```text
-Use $pitchdog-design to art-direct this pitch.dog landing page.
-```
+    Use $pitchdog-design in Mindset Mode for this client. Preserve its bright palette, type, and icon system.
 
-```text
-Use $pitchdog-design in Mindset Mode for this client. Keep its bright palette and sans-serif identity.
-```
+    Use $pitchdog-design to review this drawer interaction. Diagnose only; do not change code.
 
-```text
-Use $pitchdog-design to review this drawer interaction. Diagnose only; do not change code.
-```
+The skill supports websites and Framer, products and internal tools, decks, documents, identities, print, invitations, social and video assets, motion contracts, design-system work, and artifact review.
 
-Supported work includes web and Framer, products and internal tools, decks, documents, identities, print, invitations, social assets, motion contracts, design systems, and artifact audits.
+## What lives where
 
-## What it refuses
-
-- pitch.dog surface leaking into client work;
-- Apple, Awwwards, or “premium” cosplay;
-- cards, empty space, paper texture, or motion used as proof of quality;
-- fake portfolio work or invented facts;
-- inaccessible reference mimicry;
-- rebuilding strong work when a surgical repair is enough;
-- confusing built, rendered, checked, accepted, and published.
-
-## Repository
-
-```text
-skills/pitchdog-design/
-├── SKILL.md
-├── agents/openai.yaml
-├── brand-profiles/pitchdog.yaml
-├── references/
-├── templates/
-└── evals/evals.json
-```
-
-The installed skill uses progressive disclosure: routing stays lean; detailed brand, motion, medium, and review guidance loads only when needed.
+- skills/pitchdog-design/SKILL.md — operating spine and branch router.
+- skills/pitchdog-design/brand-profiles/pitchdog.yaml — machine-readable profile and authority locators.
+- skills/pitchdog-design/references/ — branch-only design knowledge.
+- skills/pitchdog-design/evals/evals.json — realistic behavioural cases; specifications are not execution claims.
+- scripts/validate-skill.py — structural, privacy, authority, and package-boundary checks.
+- scripts/package-skill.py — deterministic archive builder.
+- docs/source-resolution.md — research authority and conflict decisions.
+- docs/evaluation-report.md — evidence actually run for the current release.
 
 ## Validate and package
 
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install PyYAML==6.0.2
-.venv/bin/python scripts/validate-skill.py
-.venv/bin/python scripts/package-skill.py --output dist/pitchdog-design.zip
-.venv/bin/python scripts/package-skill.py --output dist/pitchdog-design.skill
-```
+    python3 -m venv .venv
+    .venv/bin/python -m pip install -r requirements-dev.txt
+    .venv/bin/python scripts/validate-skill.py
+    .venv/bin/python scripts/package-skill.py --output dist/pitchdog-design.zip
 
-The package script produces a deterministic zip with one top-level `pitchdog-design/` folder, ready for ChatGPT upload.
+Structural validation cannot certify taste, accessibility conformance, browser behaviour, or owner acceptance. Those require the real artifact and are reported separately.
 
-## Contribute
+## Licence and boundaries
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Add principles and counterexamples when they improve judgment. Do not add fixed page recipes that make unrelated work converge.
+Repository and packaged-skill prose are released under [0BSD](LICENSE). The canonical type-system repository, third-party fonts, Phosphor Icons, marks, linked services, and source references retain their own terms. No font or third-party skill file is redistributed here.
 
-## Licence
-
-[0BSD](LICENSE). Use it, change it, fork it, sell work made with it, remove attribution, teach from it. No permission ceremony.
-
-Voluntary acknowledgement is lovely but never required. Third-party fonts, marks, services, and linked works keep their own terms; see [NOTICE.md](NOTICE.md).
+See [NOTICE.md](NOTICE.md), [SECURITY.md](SECURITY.md), and [CONTRIBUTING.md](CONTRIBUTING.md).

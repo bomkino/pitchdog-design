@@ -1,34 +1,34 @@
 # Contributing
 
-Contributions are welcome when they make the skill more truthful, portable, useful, accessible, or resistant to samey output.
+Contributions are welcome when they make the skill more truthful, useful, accessible, portable, or resistant to samey output.
 
-## Before changing the skill
+## Before changing behaviour
 
-- Open an issue for a material new direction.
+- Start with an observed user need or named failure, not catalogue completeness.
 - Keep pitch.dog Brand Mode separate from external-brand Mindset Mode.
-- Preserve accepted facts, credits, and source provenance.
-- Prefer principles, decision rules, and counterexamples over fixed compositions.
-- Do not add font binaries, secrets, telemetry, remote code, or undocumented dependencies.
+- Preserve accepted facts, credits, rights, and source provenance.
+- Keep one source of truth. Point to canonical dependencies instead of copying them into prose.
+- Prefer decision rules, completion criteria, and counterexamples over fixed compositions.
+- Do not add font binaries, private assets, secrets, telemetry, remote code, or undocumented dependencies.
 - Do not copy proprietary course material or third-party skill text.
 
-## Make the change
+## Shape the skill
 
-- Keep `SKILL.md` operational and under 500 lines.
-- Put detail in a directly linked reference.
-- Add or update an adversarial eval for every behavior change.
-- Use imperative language and exact evidence boundaries.
-- Keep the skill text-only unless deterministic code is necessary and fully reviewable.
+- Put the universal operating spine in SKILL.md and branch-only detail in a directly linked reference.
+- Co-locate one concept's rule, definition, and caveats.
+- Make each process step end in a checkable criterion.
+- Prune duplicated and no-op sentences without deleting useful design knowledge for brevity.
+- Update a realistic behavioural case when a change alters behaviour.
+- Keep objective structural checks separate from qualitative design judgment.
 
 ## Validate
 
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install PyYAML==6.0.2
-.venv/bin/python scripts/validate-skill.py
-.venv/bin/python scripts/package-skill.py --output dist/pitchdog-design.zip
-```
+    python3 -m venv .venv
+    .venv/bin/python -m pip install -r requirements-dev.txt
+    .venv/bin/python scripts/validate-skill.py
+    .venv/bin/python scripts/package-skill.py --output dist/pitchdog-design.zip
 
-Inspect the resulting zip before opening a pull request.
+Inspect the archive, run the affected behavioural cases with a fresh agent, and record only evidence that was actually produced.
 
 ## Licence of contributions
 

@@ -30,7 +30,7 @@
 | Proof | Checked / Not checked |  |
 | Grayscale | Checked / Not checked |  |
 | Silhouette | Checked / Not checked |  |
-| Texture off | Checked / Not checked |  |
+| Material source | Checked / Not checked |  |
 | Container off | Checked / Not checked |  |
 | Motion off | Checked / Not checked |  |
 | Reverse motion | Checked / Not checked |  |
@@ -44,6 +44,9 @@
 - Built:
 - Rendered:
 - Checked:
+- Installed:
+- Deployed:
 - Accepted by owner:
 - Published:
+- Live:
 - Still requires:

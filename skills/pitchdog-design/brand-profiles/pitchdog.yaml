@@ -2,354 +2,114 @@ profile:
   id: "pitchdog"
   name: "pitch.dog"
   version: "2.0.0"
-  status: "canonical"
+  status: "canonical-routing-profile"
   mode: "explicit-or-owned-artifact"
   principle: "Use our foundation. Give the subject its own answer."
   anti_sameness: "Same standard. Different idea."
+
+authority:
+  order:
+    - "safety-consent-privacy-law-accessibility-authorization"
+    - "current-user-constraints-and-protected-material"
+    - "current-target-brand-authority-and-owner-decisions"
+    - "audience-outcome-content-proof-and-medium"
+    - "pitchdog-design-judgment"
+    - "references-trends-and-polish"
+  conflict_rule: "Newer owner-confirmed decisions outrank this installed profile."
+  unresolved_rule: "Preserve ambiguity; do not invent a convenient authority."
 
 actual_goal:
   audience_outcome: >-
     The intended person understands the offer or task, trusts nearby proof,
     can act or recover, and remembers a distinct human studio.
   costliest_false_success: >-
-    A beautiful, token-compliant artifact that hides proof, weakens usability,
+    A beautiful, system-compliant artifact that hides proof, weakens usability,
     feels generic, or makes every project resemble pitch.dog.
-  vulnerable_proxies:
-    - "Apple-like"
-    - "Awwwards-ready"
-    - "premium"
-    - "cinematic"
-    - "tactile"
-    - "Display-P3"
-    - "full-bleed"
-    - "dynamic"
-    - "spacious"
 
 typography:
-  rem_base_px: 16
-  families:
-    display:
-      name: "Neco"
-      official_source: "https://www.fontshare.com/fonts/neco"
-      fallback: '"Iowan Old Style", "Palatino Linotype", Georgia, serif'
-    body:
-      name: "Erode"
-      official_source: "https://www.fontshare.com/fonts/erode"
-      fallback: '"Iowan Old Style", "Palatino Linotype", Georgia, serif'
-    utility_mono:
-      name: "Geist Mono"
-      official_source: "https://vercel.com/font?type=mono"
-      fallback: '"SFMono-Regular", Menlo, Consolas, monospace'
-    dense_ui:
-      name: "Geist Sans"
-      official_source: "https://vercel.com/font"
-      fallback: "Inter, system-ui, sans-serif"
-  licensing_rule: >-
-    Verify current licence and availability from the official source before use.
-    Never bundle font binaries. Disclose temporary fallbacks and do not claim
-    complete brand fidelity after substitution.
-  roles:
-    display: "Neco"
-    h1_h2: "Neco"
-    intro_body: "Erode"
-    dense_ui_body: "Geist Sans"
-    eyebrow_folio: "Geist Mono"
-    utility_status: "Geist Mono"
-    caption: "Erode or Geist Mono according to semantic role"
-    project_title: "Project-led; Neco is default in Brand Mode"
-  web_scale_rem:
-    display_xl:
-      wide: 7.5
-      desktop: 6.0
-      tablet: 4.5
-      phone: 3.0
-      line_height_em: [0.90, 0.98]
-    display_h1:
-      wide: 5.5
-      desktop: 4.5
-      tablet: 3.5
-      phone: 2.625
-      line_height_em: [0.94, 1.02]
-    h2:
-      wide: 4.0
-      desktop: 3.25
-      tablet: 2.5
-      phone: 2.0
-      line_height_em: [0.98, 1.08]
-    h3:
-      wide: 2.25
-      desktop: 2.0
-      tablet: 1.75
-      phone: 1.5
-      line_height_em: [1.05, 1.18]
-    intro:
-      wide: 1.5
-      desktop: 1.375
-      tablet: 1.25
-      phone: 1.125
-      line_height_em: [1.30, 1.45]
-    body:
-      wide: 1.125
-      desktop: 1.125
-      tablet: 1.0625
-      phone: 1.0
-      line_height_em: [1.48, 1.62]
-    small:
-      wide: 0.9375
-      desktop: 0.9375
-      tablet: 0.875
-      phone: 0.875
-      line_height_em: [1.40, 1.55]
-    utility:
-      wide: 0.8125
-      desktop: 0.8125
-      tablet: 0.75
-      phone: 0.75
-      line_height_em: [1.25, 1.40]
-  tracking_em:
-    neco_display: [-0.035, -0.01]
-    erode_body: [-0.005, 0.01]
-    geist_mono_utility: [0.03, 0.08]
-  reading_measure_characters: [55, 70]
+  authority_repository: "https://github.com/bomkino/pitchdog-type-system"
+  authority_reference: "../references/typography-authority.md"
+  policy: "resolve-verify-pin-consume"
+  existing_artifact: "Preserve its immutable pin until migration is authorized."
+  never_cache_here: "font binaries, family names, role values, scales, measures, wrapping rules, or CSS"
+  failure_mode: "If source authorities disagree or cannot be accessed, keep typography unresolved."
 
-colour:
-  opaque:
-    paper_neutral:
-      p3: "color(display-p3 0.964 0.961 0.972)"
-      srgb: "#F6F5F8"
-    paper_powder:
-      p3: "color(display-p3 0.900 0.925 0.957)"
-      srgb: "#E4ECF5"
-    paper_lilac:
-      p3: "color(display-p3 0.950 0.920 0.975)"
-      srgb: "#F2EBF8"
-    paper_mint:
-      p3: "color(display-p3 0.918 0.946 0.910)"
-      srgb: "#EAF1E8"
-    paper_blush:
-      p3: "color(display-p3 0.990 0.900 0.925)"
-      srgb: "#FDE9EE"
-    sheet:
-      p3: "color(display-p3 0.992 0.988 0.982)"
-      srgb: "#FDFCFB"
-    ink:
-      p3: "color(display-p3 0.055 0.054 0.060)"
-      srgb: "#0E0E0F"
-    muted_ink:
-      p3: "color(display-p3 0.37 0.38 0.41)"
-      srgb: "#5F6169"
-    ink_room:
-      p3: "color(display-p3 0.044 0.047 0.054)"
-      srgb: "#0B0C0E"
-    blue_black:
-      p3: "color(display-p3 0.050 0.061 0.080)"
-      srgb: "#0C1015"
-    panel_dark:
-      p3: "color(display-p3 0.083 0.085 0.097)"
-      srgb: "#151619"
-    dark_lilac:
-      p3: "color(display-p3 0.065 0.050 0.082)"
-      srgb: "#110D15"
-    dark_mint:
-      p3: "color(display-p3 0.043 0.070 0.058)"
-      srgb: "#0B120F"
-    dark_blush:
-      p3: "color(display-p3 0.090 0.050 0.058)"
-      srgb: "#170D0F"
-    light_ink:
-      p3: "color(display-p3 0.945 0.941 0.931)"
-      srgb: "#F1F0ED"
-    muted_light_ink:
-      p3: "color(display-p3 0.65 0.655 0.69)"
-      srgb: "#A6A7AF"
-    signal_vermilion:
-      p3: "color(display-p3 0.88 0.32 0.21)"
-      srgb: "#F34325"
-    signal_cobalt:
-      p3: "color(display-p3 0.13 0.31 0.80)"
-      srgb: "#0450D4"
-    signal_cobalt_dark:
-      p3: "color(display-p3 0.55 0.66 0.95)"
-      srgb: "#85A9F8"
-  alpha:
-    ink: [0.04, 0.08, 0.12, 0.14, 0.16, 0.24, 0.40, 0.64]
-    light_ink: [0.04, 0.08, 0.12, 0.16, 0.24, 0.40, 0.64]
-    vermilion: [0.12, 0.24, 0.40]
-    cobalt: [0.12, 0.24, 0.40]
-    sheet: [0.88, 0.96]
-    ink_room: [0.40, 0.64, 0.80, 0.88, 0.96]
-  rules:
-    - "Mostly monochrome; use signal colours as punctuation."
-    - "Project colour may change the room; never tint unapproved proof."
-    - "Use discrete editorial states, not continuous gradient soup."
-    - "Keep layer opacity at 100%; encode alpha in the colour token."
-    - "Verify sRGB fallback and contrast."
+digital:
+  authority_reference: "../references/digital-theme-and-icons.md"
+  scope: "all new digital work; existing-artifact expansion requires authority"
+  theme:
+    choices: ["system", "light", "dark"]
+    default: "system"
+    light_and_dark: "independently-authored"
+    external_brand_rule: "Preserve accepted values; label a missing derived mode provisional until owner acceptance."
+  icons:
+    family: "Phosphor Icons"
+    external_brand_rule: "Preserve an accepted external family; otherwise use Phosphor provisionally until owner acceptance."
+    project_version_rule: "Pin the official adapter in the consuming project's lockfile."
+    minimum_target_css_px: 44
+    destructive_action: "never-icon-alone; require visible text or equally explicit adjacent confirmation"
+    exception: "Typographic arrows inside text follow the resolved type-system contract."
 
-spacing:
-  atomic_unit_px: 4
-  dominant_rhythm_px: 8
-  tokens_px: [4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128, 160, 192, 256]
+design_language:
+  website_reference: "../references/website-design-language.md"
+  governing_sentence: "Quiet field. Loud work. One strange little thing."
+  cadence:
+    scope: "authored editorial scenes, not dense task surfaces"
+    primary_events_per_scene: 1
+    secondary_whispers_per_scene: "0-or-1"
+  anti_template: "Relationships and judgment may travel; page recipes and named scenes may not."
 
-web_grid:
-  wide:
-    width_px: 1600
-    columns: 12
-    margin_px: 64
-    gutter_px: 32
-  desktop:
-    width_px: 1200
-    columns: 12
-    margin_px: 48
-    gutter_px: 24
-  tablet:
-    width_px: 810
-    columns: 8
-    margin_px: 32
-    gutter_px: 20
-  phone:
-    width_px: 390
-    columns: 4
-    margin_px: 20
-    gutter_px: 12
-  review_widths_px: [360, 390, 600, 768, 810, 834, 1024, 1200, 1366, 1440, 1600, 1920, 2560, 3840]
-
-web_canvas:
-  viewport_scene:
-    width: "fill"
-    max_width_px: null
-  wide_proof:
-    width_percent: 92
-    max_width_px: 3200
-  home_wide_proof:
-    max_width_px: 2560
-  editorial_core:
-    width: "fill"
-    max_width_px: 1760
-  reading_measure:
-    width: "fill"
-    optical_target_px: [680, 760]
-
-surface:
-  character: ["editorial", "tactile", "full-bleed", "cool-paper", "hard-edged", "authored", "warm"]
-  use:
-    - "hard edges"
-    - "fine rules"
-    - "purposeful overlap"
-    - "controlled stacks"
-    - "registration details"
-    - "real project residue"
-    - "contact shadows only where surfaces meet"
-  avoid:
-    - "scrapbook theatre"
-    - "vintage paper cosplay"
-    - "moving grain"
-    - "random rotation"
-    - "global glassmorphism"
-    - "universal rounded cards"
-
-radii_px:
-  none: 0
-  contact: 2
-  control: 4
-  circle: 999
-  rule: "Use radius only when conceptually justified."
-
-rules_px:
-  hairline: 1
-  strong: 2
-
-motion:
-  principles:
-    - "immediate response"
-    - "current-value retargeting"
-    - "spatial origin and return"
-    - "interruptible interaction"
-    - "zero bounce by default"
-    - "clarity before spectacle"
-  durations_ms:
-    press: [80, 120]
-    hover_focus: [140, 180]
-    form_status: [120, 200]
-    passive_reveal: [180, 260]
-    semantic_stagger: [0, 60]
-    panel: [300, 400]
-    scroll_state_settle: [200, 320]
-    reduced_motion_opacity: [120, 200]
-    ordinary_ui_max: 500
-  springs:
-    reposition:
-      damping_ratio: 1.0
-      response_seconds: 0.4
-    momentum_rotation:
-      damping_ratio: 0.8
-      response_seconds: 0.4
-    drawer_release:
-      damping_ratio: 0.8
-      response_seconds: 0.3
-  forbidden:
-    - "scroll-jacking"
-    - "site-wide smooth scroll"
-    - "large animated blur"
-    - "decorative loops"
-    - "default bounce"
-    - "fake momentum"
-    - "WebGL foundation"
-    - "desktop motion compressed onto phone"
-    - "input lock during motion"
+colour_and_material:
+  authority_reference: "../references/colour-and-material.md"
+  universal_boundary: "Preserve approved proof and never add grain, noise, turbulence, distressed overlays, or pseudo-texture."
+  mindset_rule: "Accepted target-brand material language wins except for the universal boundary."
 
 components:
-  philosophy: >-
-    Cards are pages, frames, proofs, notes, status rows, and index entries;
-    never a universal rounded tile.
-  shared_foundations:
-    - "viewport_scene"
-    - "wide_canvas"
-    - "editorial_core"
-    - "reading_measure"
-    - "section"
-    - "bleed"
-    - "theme_context"
-    - "navigation_shell"
-    - "ink_block"
-    - "editorial_link"
-    - "index_row"
-    - "utility_control"
-    - "proof_frame"
-    - "story_card"
-    - "offer_object"
-    - "testimonial_note"
-    - "status_row"
-    - "faq_row"
-    - "form_system"
-  rule: "Repeat foundations. Keep narrative compositions authored."
+  authority_reference: "../references/design-system-governance.md"
+  principle: "Instruments, not skins."
+  extraction_gate: "Two representative real uses; otherwise keep a local pilot."
 
-proof:
-  placement: "Early and at meaningful scale."
-  preservation: "Never tint, invent, or replace owner-supplied proof without authority."
-  placeholders: "Named internal placeholders are allowed; visible public placeholders are not."
+motion:
+  authority_reference: "../references/motion-and-interaction.md"
+  decision_order: "frequency-purpose-behaviour-origin-access-evidence"
+  hard_rules:
+    - "No motion quota or high-frequency keyboard motion."
+    - "Start interruption from the live presentation value."
+    - "Keep an excellent still and a complete reduced-motion state."
+    - "Calibration values are project evidence, never global production tokens."
 
-accessibility:
-  target: "WCAG 2.2 AA"
-  claim_rule: "Do not claim conformance until the finished artifact is evaluated."
-  requirements:
-    - "complete keyboard path"
-    - "visible focus"
-    - "semantic structure"
-    - "reduced motion"
-    - "reduced transparency"
-    - "zoom and reflow"
-    - "useful errors"
-    - "announced status"
-    - "non-colour state"
-    - "sufficient touch targets"
+responsive_and_accessibility:
+  authority_reference: "../references/responsive-accessibility-performance.md"
+  phone: "Author priority, sequence, density, proof, crop, and interaction."
+  target: "WCAG 2.2 AA where applicable; conformance requires finished-artifact evidence."
 
-brand_modes:
-  pitchdog:
-    use_surface_profile: true
-  mindset:
-    use_surface_profile: false
-    preserve_target_brand: true
-  internal_product:
-    use_surface_profile: true
-    body_adapter: "Geist Sans"
-    priority: "task-first"
+non_web:
+  authority_reference: "../references/non-web-adapters.md"
+  rule: "Translate meaning through the medium; do not paste digital geometry or controls into physical work."
+
+external_brand:
+  authority_reference: "../references/external-brand-adapter.md"
+  rule: "Transfer judgment, not pitch.dog identity."
+
+review:
+  authority_reference: "../references/artifact-review.md"
+  rule: "Diagnose before changing; inspect the artifact; report unperformed checks."
+
+universal:
+  proof: "Real work precedes broad claims; preserve source colour, crop authority, credits, rights, and facts."
+  missing_proof: "Reduce, withhold, or name an internal placeholder; never manufacture public proof."
+  illustration: "Treat an illustration as a complete visual poem, not a mascot parts bin."
+  owner_gate: "Only the owner accepts consequential creative work."
+
+evidence:
+  separate_states:
+    - "edited"
+    - "built"
+    - "rendered"
+    - "checked"
+    - "installed"
+    - "deployed"
+    - "published"
+    - "live"
+    - "accepted"
+  stop: "The artifact does its real job; material risks are resolved or named; another change would be decorative churn."

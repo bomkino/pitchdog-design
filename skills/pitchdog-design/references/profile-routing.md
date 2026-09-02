@@ -1,76 +1,76 @@
 # Profile routing
 
+Choose one profile before making visual decisions. The profile controls what may be imported, what must be preserved, and which source has authority.
+
+## Runtime authority
+
+Resolve current truth in this order:
+
+1. explicit constraints in the current request;
+2. current owner-approved project decisions and protected material;
+3. accepted target-brand files, tokens, assets, and live product evidence;
+4. the target's pinned dependencies and platform behaviour;
+5. the installed pitch.dog profile and references;
+6. inspiration, precedent, and optional polish.
+
+A newer installed profile never silently migrates an existing artifact. Record accepted, inferred, provisional, and unresolved decisions separately.
+
 ## Brand Mode
 
-Use Brand Mode when:
+Use Brand Mode when pitch.dog owns the artifact or the user explicitly requests pitch.dog branding.
 
-- the user explicitly requests pitch.dog branding;
-- the artifact is clearly owned by pitch.dog;
-- the request says “for pitch.dog,” “use our brand,” or equivalent in an established pitch.dog context;
-- the repository or accepted brief identifies pitch.dog as owner.
+Always load:
 
-Load:
+1. brand-profiles/pitchdog.yaml;
+2. references/pitchdog-brand-foundation.md;
+3. references/typography-authority.md.
 
-1. `pitchdog-brand-foundation.md`
-2. `colour-p3-and-alpha.md`
-3. `spacing-grid-and-sizing.md`
-4. `../brand-profiles/pitchdog.yaml`
-5. only relevant medium references
+Then load only the active branch:
 
-Use the foundation as authority, not a visual recipe. Vary composition, density, proof scale, scene colour, container choice, and motion budget according to the subject.
+- digital: references/digital-theme-and-icons.md and references/colour-and-material.md;
+- website or Framer: also references/website-design-language.md, references/web-framer-and-responsive.md, and references/spacing-grid-and-sizing.md;
+- complex interaction: references/motion-and-interaction.md;
+- design system, tokens, components, or migration: references/design-system-governance.md;
+- deck, document, identity, print, social, or video: references/non-web-adapters.md;
+- audit: references/artifact-review.md and references/anti-patterns.md.
+
+Brand Mode supplies stable authority, not a fixed composition. Every artifact still needs a subject-native thesis.
 
 ## Mindset Mode
 
-Use Mindset Mode when the artifact belongs to a client, creator, institution, product, event, or other external subject.
+Use Mindset Mode for client, creator, external-brand, and personal artifacts unless pitch.dog branding is explicitly requested.
 
-Load `external-brand-adapter.md` and relevant medium guidance. Do not load or apply pitch.dog tokens unless the user requests translation, comparison, or a pitch.dog-branded wrapper.
+Load references/external-brand-adapter.md and the relevant medium branch. Preserve the target's type, colour, marks, assets, voice, cultural context, and established interaction patterns. Do not resolve or import pitch.dog typography, themes, icons, colour, dogs, or website grammar merely because the skill is active.
 
-Preserve target-brand type, palette, logo, voice, assets, and constraints. Transfer:
+Transfer only the standard of judgment: real outcome, proof, hierarchy, one governing idea, authored adaptation, humane states, causal motion, and honest verification.
 
-- Actual Goal clarity;
-- proof discipline;
-- one governing idea;
-- relational spacing;
-- humane states;
-- causal motion;
-- responsive authorship;
-- accessibility, performance, and exact finish.
+## Review and refine
 
-Ask: what would pitch.dog notice here—not what would pitch.dog paste here?
+A review defaults to the artifact's existing identity. Diagnose functional failure, system failure, and taste separately.
 
-## Review routing
+A refinement changes the smallest causal area. Do not use an audit as permission to rebuild, translate brands, replace accepted copy, migrate a dependency, or publish.
 
-Infer ownership from the artifact. Preserve its current brand unless the user requests a translation. Diagnose before proposing replacement.
+## Ambiguous cases
 
-## Ambiguous ownership
+Use these defaults:
 
-Ask one short question only if the profile materially changes typography, colour, assets, or public authorship. Otherwise use these defaults:
+| Situation | Profile |
+| --- | --- |
+| pitch.dog website, deck, tool, social asset, or internal system | Brand Mode |
+| client work shown inside a pitch.dog case study | Brand Mode for the frame; client authority for the proof |
+| external client artifact made by pitch.dog | Mindset Mode |
+| personal invitation with no branding request | Mindset Mode |
+| comparison between brands | Separate profiles; no blended token set |
+| existing artifact with unknown authority | Preserve and review; do not restyle |
 
-- pitch.dog property: Brand Mode;
-- external property: Mindset Mode;
-- personal occasion: Mindset Mode derived from the people and occasion;
-- internal pitch.dog tool: Brand Mode with dense product adapter;
-- mixed client/pitch.dog case study: pitch.dog shell, untouched client proof.
+Ask one concise question only when a wrong choice would materially alter identity, protected material, or authority and no responsible default exists.
 
-## Brand leakage test
+## Leakage check
 
-Mindset Mode must still work with:
+For Mindset Mode:
 
-- no Neco or Erode;
-- no Geist Mono;
-- no pitch.dog colours;
-- no cards, paper, dogs, full bleed, or motion;
-- no resemblance to pitch.dog's website.
+- Would replacing the logo leave a generic artifact?
+- Did pitch.dog typography, colour, dogs, page choreography, or material language enter without authority? If Phosphor filled a genuinely absent icon system, is it still named provisional until owner acceptance?
+- Does removing pitch.dog-associated surface cues collapse the quality?
 
-If it does not, the skill transferred a costume instead of judgment.
-
-## Source hierarchy inside Brand Mode
-
-Use, in order:
-
-1. current project tokens and user-supplied brand files;
-2. installed canonical pitch.dog profile;
-3. newer owner-confirmed changes;
-4. clearly labelled temporary exploration.
-
-Version 2.0 resolves the earlier font uncertainty: Neco, Erode, and Geist Mono are canonical defaults for pitch.dog brand work; Geist Sans is the dense-interface adapter. Still verify lawful availability and disclose fallbacks. Never bundle font binaries.
+If the answer reveals leakage, restore target authorship. Family resemblance belongs in care and rigor, not in clothes.

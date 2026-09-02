@@ -35,9 +35,9 @@ Does hierarchy survive without colour?
 
 Blur or zoom out. Is the composition a field of equal cards and generic zones?
 
-### Texture-off
+### Material-source
 
-Remove grain, scans, tape, shadows, and residue. Does material logic remain?
+Account for every textural cue. Is it intrinsic to approved source art or caused by a real edge, crop, overlap, contact, mark, or material? Any additive texture layer fails the pitch.dog material boundary.
 
 ### Container-off
 
@@ -61,7 +61,7 @@ Does proof gain authority while sustained reading stays controlled?
 
 ### Brand Mode
 
-Are canonical type, colour, spacing, sizing, surface, motion, and responsive rules used semantically rather than ceremonially?
+Are the active resolved type, colour, space, material, motion, and responsive authorities used semantically rather than ceremonially?
 
 ### Mindset Mode
 
@@ -88,7 +88,7 @@ Check copy, names, pronouns, titles, figures, URLs, credits, crops, contrast, pe
 - A source review proves source behavior, not rendering.
 - A screenshot proves one visual state, not interaction or access.
 - A green build proves compilation, not audience outcome.
-- A deployment URL proves hosting, not correctness.
+- A deployment URL proves hosting, not correctness, installation, publication, liveness, or acceptance.
 - An automated accessibility scan finds classes of issues, not conformance.
 - Only an owner accepts consequential creative work.
 
